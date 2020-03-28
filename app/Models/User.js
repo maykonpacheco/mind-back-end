@@ -19,8 +19,12 @@ class User extends Model {
     return this.hasMany('App/Models/Token')
   }
 
-  appointments () {
-    return this.hasMany('App/Models/Appointment')
+  schedule () {
+    return this.hasMany('App/Models/Schedule')
+  }
+
+  pacients () {
+    return this.belongsTo('App/Models/Pacient')
   }
 }
 

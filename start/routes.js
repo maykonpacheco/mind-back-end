@@ -12,6 +12,7 @@ Route.put("passwords", "ForgotPasswordController.update")
 
 
 Route.group(() => {
-   Route.resource("appointments", "AppointmentController").apiOnly()
+   Route.resource("pacients", "PacientController").apiOnly()
+   Route.resource("pacients.schedules", "ScheduleController").apiOnly()
 
 }).middleware(['auth'])
