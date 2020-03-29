@@ -24,6 +24,7 @@ class ScheduleSchema extends Schema {
         .onDelete('SET NULL')  
       table.date('date').notNullable()
       table.time('time').notNullable()
+      table.string('value').notNullable()
       table.timestamps()
     })
   }

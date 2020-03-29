@@ -27,7 +27,7 @@ class ScheduleController {
         .send({ error: { message: "Essa data já passou." } })
     }
 
-    const data = request.only(["date", "time"])
+    const data = request.only(["date", "time", "value"])
     
 
     const schedule = await Schedule.create({
